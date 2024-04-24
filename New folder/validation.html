@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <form action="">
+      <label for="">NAME :</label>
+      <input type="text" placeholder="Enter Your Name" id="user_name" onkeypress="validation()"> -->
+
+
+      <label for="">EMAIL :</label>
+      <input type="email" placeholder="Enter Your Email" id="user_email" onkeypress="validation()">
+
+
+     </form>
+    
+
+
+     <script>
+          function validation() {
+           let user_inp = document.getElementById("user_email").value;
+           let pattern = /^[a-zA-Z0-9,._%+-]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}$/;
+             
+          if(pattern.test(user_inp))
+          {
+            document.getElementById("user_email").style.backgroundColor = "green"
+          }
+           else{
+            document.getElementById("user_email").style.backgroundColor = "red"
+          }
+        }
+        function validation() {
+           let user_inp = document.getElementById("user_email").value;
+           let pattern = /^[a-zA-Z0-9,._%+-]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}$/;
+             
+          if(pattern.test(user_inp))
+          {
+            document.getElementById("user_email").style.backgroundColor = "green"
+          }
+           else{
+            document.getElementById("user_email").style.backgroundColor = "red"
+          }}
+
+
+     </script>
+</body>
+</html>
